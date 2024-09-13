@@ -29,13 +29,13 @@ export class FaceSnapComponent implements OnInit {
   }
 
   snap() {
-    this.facesnap.snaps++;
+    this.facesnap.addSnap();
     this.textSnapButton = "Oops, un Snap!";
     this.hasSnapped = true;
   }
 
   unSnap() {
-    this.facesnap.snaps--;
+    this.facesnap.removeSnap();
     this.textSnapButton = "Oh snap!";
     this.hasSnapped = false;
   }
