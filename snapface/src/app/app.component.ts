@@ -28,14 +28,14 @@ export class AppComponent implements OnInit {
         "Le plein de vitamines", 
         "https://images.anaca3.com/wp-content/uploads/2018/05/combien-de-calories-dans-un-jus-de-fruits-de-la-passion-702x336.jpg", 
         new Date(), 
-        0
+        100
       ),
       new FaceSnap(
         "Des vacances parfaites", 
         "On se sent bien", 
         "https://images.goelia.com/sigo/images/menu/VP_28.jpg?v=15", 
         new Date(), 
-        0
+        255
       )
     ];
     this.faceSnaps[0].setLocation("à la plage");
