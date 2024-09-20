@@ -11,14 +11,14 @@ export class FaceSnapsService {
         new FaceSnap(
           "Destination de rêve", 
           "Toujours au soleil", 
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZGCQ9jac_mKUSNpIZcWJEQFnZpgvgzi_SA&s", 
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3", 
           new Date(), 
           0
         ).withLocation('à la plage'),
         new FaceSnap(
           "Boisson de rêve", 
           "Le plein de vitamines", 
-          "https://images.anaca3.com/wp-content/uploads/2018/05/combien-de-calories-dans-un-jus-de-fruits-de-la-passion-702x336.jpg", 
+          "https://img3.wallspic.com/crops/0/8/6/4/7/174680/174680-continuation-eau-vaisselle-neige-verrerie-3840x2160.jpg", 
           new Date(), 
           100
         ),
