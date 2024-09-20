@@ -31,16 +31,21 @@ export class FaceSnapsService {
         )
     ];
 
-    getFaceSnaps(): FaceSnap[] {
-        return [...this.faceSnaps];
-    }
-
-    snapFaceSnapById(faceSnapId: string, snapType: SnapType) : void {
+    getFaceSnapById(faceSnapId: string) : FaceSnap {
       const faceSnapFound = this.faceSnaps.find(faceSnap => faceSnap.id === faceSnapId);
       if (!faceSnapFound) {
         throw Error(`FaceSnap ${faceSnapId} not found!`);
       }
 
+      return faceSnapFound;
+    }
+
+    getFaceSnaps(): FaceSnap[] {
+        return [...this.faceSnaps];
+    }
+
+    snapFaceSnapById(faceSnapId: string, snapType: SnapType) : void {
+      const faceSnapFound = this.getFaceSnapById(faceSnapId);
       faceSnapFound.snap(snapType);
     }
 }
