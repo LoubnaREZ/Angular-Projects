@@ -11,6 +11,6 @@
     <p>Créé le {{ facesnap.createdAt | date: 'd MMMM yyyy, à HH:mm' }}</p>
     <p>
         <button (click)="onSnap()">{{ textSnapButton }}</button>
-        <span [ngStyle]="{ color: 'rgb(0, ' + facesnap.snaps + ', 0)' }">❤️ {{ facesnap.snaps }}</span>
+        <span [ngStyle]="{ color: 'rgb(' + facesnap.snaps + ', 0, 0)' }">❤️ {{ facesnap.snaps }}</span>
     </p>
 </div>
