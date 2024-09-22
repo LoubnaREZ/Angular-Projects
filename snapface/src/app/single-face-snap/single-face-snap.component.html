@@ -1,5 +1,5 @@
 <div class="face-snap-card" [ngClass]="{ snapped: hasSnapped }">
-    <a routerLink="/facesnaps">BACK</a>
+    <a routerLink="/facesnaps" class="router-link-back">BACK</a>
     <h2>{{ facesnap.title | uppercase }}</h2>
     @if (facesnap.location) {
         <p>Location : {{ facesnap.location }}</p>

@@ -26,21 +26,19 @@ export class SingleFaceSnapComponent implements OnInit {
 
   ngOnInit(): void {
     this.prepareInterface();
-
     this.getFaceSnap();
   }
 
-  
   onSnap(): void {
     if (!this.hasSnapped)
-      {
-        this.snap();
-      } else {
-        this.unSnap();
-      }
+    {
+      this.snap();
+    } else {
+      this.unSnap();
     }
+  }
     
-    snap() {
+  snap() {
     this.faceSnapsService.snapFaceSnapById(this.facesnap.id, 'snap');
     this.textSnapButton = "Oops, un Snap!";
     this.hasSnapped = true;
